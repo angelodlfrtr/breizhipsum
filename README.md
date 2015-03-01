@@ -4,6 +4,11 @@
 
 Génération de faux texte avec des expressions bretonnes.
 
+## TODO
+
+- Ajouter des expressions
+- Expressions que en pur Breton ?
+
 ## Installation
 
 Add this line to your application's Gemfile:
