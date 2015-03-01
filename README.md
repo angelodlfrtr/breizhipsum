@@ -1,5 +1,7 @@
 # Breizhipsum
 
+[![Gem Version](https://badge.fury.io/rb/breizhipsum.svg)](http://badge.fury.io/rb/breizhipsum)
+
 Génération de faux texte avec des expressions bretonnes.
 
 ## Installation
