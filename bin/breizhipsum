@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+require 'commander/import'
+require 'breizhipsum'
+
+program :name,        'Breizh Ipsum'
+program :description, 'Generate fake text in breton'
+program :version,     '0.0.1'
+
+command :generate do |c|
+
+  c.syntax  = 'breizhipsum generate [options]'
+  c.summary = 'Genarete fake text'
+
+  c.option '-p INTEGER', Integer, 'Number of paragraphs'
+  c.option '-f STRING', String, 'Format of paragraphs, can be [small, medium, long]'
+  c.option '--html', 'Generate in html'
+
+  c.action do |args, options|
+
+    options.default \
+      :p    => 2,
+      :f    => :medium,
+      :html => false
+
+    say Breizhipsum::Work.new({
+      :paragraphs => options.p,
+      :format     => options.f.to_sym,
+      :html       => options.html
+    }).generate
+
+  end
+end
+
+alias_command :g, :generate
