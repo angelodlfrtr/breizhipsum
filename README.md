@@ -6,8 +6,7 @@ Génération de faux texte avec des expressions bretonnes.
 
 ## TODO
 
-- Ajouter des expressions
-- Expressions que en pur Breton ?
+- Write specs
 
 ## Installation
 
