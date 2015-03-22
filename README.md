@@ -28,7 +28,7 @@ Or install it yourself as:
 
 ### From ruby
 
-Require gem with `require('breizhipsum')`.
+Require gem with `require 'breizhipsum'`.
 
 ```ruby
 text = Breizhipsum::Work.new({
